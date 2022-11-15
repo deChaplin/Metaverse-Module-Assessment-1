@@ -35,6 +35,7 @@ public class portalTeleporter : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("TELEPORT");
         if (other.tag == "Player")
         {
             playerIsOverLapping = true;
@@ -43,6 +44,7 @@ public class portalTeleporter : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        //Debug.Log("NOT TELEPORT");
         if (other.tag == "Player")
         {
             playerIsOverLapping = false;
